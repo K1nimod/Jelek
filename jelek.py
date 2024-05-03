@@ -11,3 +11,12 @@ class Jel:
         
 f = open("jel.txt", "rt", encoding="utf-8")
 
+lista = []
+
+for sor in f:
+    sor = sor.strip().split(" ")
+    lista.append(Jel(sor[0],sor[1],sor[2],sor[3],sor[4]))
+
+print(lista)
+sorszam = int(input(print("Kérem a sorszámot: ")))
+
