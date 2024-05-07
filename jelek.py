@@ -8,7 +8,9 @@ class Jel:
     
     def __str__(self):
         return f"{self.ora} {self.perc}{self.mp}{self.x}{self.y}"
-        
+    
+      
+  
 f = open("jel.txt", "rt", encoding="utf-8")
 
 lista = []
@@ -31,5 +33,8 @@ print("2.fealdat")
 sorszam = int(input("Adjon meg egy sorszámot: "))
 print (f"x={lista[sorszam-1].x} y={lista[sorszam-1].y}")
 
-def eltelt():
-    
+def eltelt(els, mas):
+    i1 = els[0] * 3600 + els[1] * 60 + els[2]
+    i2 = mas[0] * 3600 + mas[1] * 60 + mas[2]
+    elt = i2-i1
+    return elt
