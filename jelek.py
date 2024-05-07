@@ -11,3 +11,13 @@ class Jel:
         
 f = open("jel.txt", "rt", encoding="utf-8")
 
+lista = []
+db = 0
+
+for sor in f:
+    sor = sor.strip().split(" ")
+    lista.append(Jel(sor[0],sor[1],sor[2],sor[3],sor[4]))
+    
+
+sorszam = int(input("Adjon meg egy sorszámot: "))
+print (f"{lista[sorszam-1].x}x - {lista[sorszam-1].y}y")
