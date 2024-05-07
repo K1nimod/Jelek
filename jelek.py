@@ -18,6 +18,9 @@ for sor in f:
     sor = sor.strip().split(" ")
     lista.append(Jel(sor[0],sor[1],sor[2],sor[3],sor[4]))
     
-
+print("2.fealdat")
 sorszam = int(input("Adjon meg egy sorszámot: "))
-print (f"{lista[sorszam-1].x}x - {lista[sorszam-1].y}y")
+print (f"x={lista[sorszam-1].x} y={lista[sorszam-1].y}")
+
+def eltelt():
+    
